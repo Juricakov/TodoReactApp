@@ -1,0 +1,53 @@
+.todo {
+	width: 98%;
+	margin: 0.5rem;
+	min-height: 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+	border-radius: 0.5rem;
+}
+.todo-body {
+	height: 100%;
+	width: 95%;
+	display: flex;
+	align-items: center;
+	background: var(--primary-color);
+	color: var(--light-color);
+	border-radius: 0.5rem;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.todo-body:hover {
+	background: var(--primary-color-faded);
+	transform: translate(0.05rem, -0.1rem);
+}
+
+.todo-body p {
+	margin-left: 1rem;
+	padding: 0.25rem;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.delete-btn {
+	background: var(--light-color);
+	color: var(--primary-color);
+	border: none;
+	height: 70%;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0.5rem;
+	margin-right: 1rem;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	cursor: pointer;
+}
+
+.delete-btn:hover {
+	transform: translate(0.05rem, -0.1rem);
+}
