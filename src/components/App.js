@@ -7,7 +7,7 @@ import '../styles/App.css';
 export const App = () => {
 	const [todos, setTodos] = useState([]);
 	const textInputRef = useRef();
-	useEffect(() => console.log(todos));
+	useEffect(() => textInputRef.current.focus());
 	const createTodo = (text) => {
 		return { text, completed: false, _id: uuid() };
 	};
@@ -17,7 +17,6 @@ export const App = () => {
 		if (text === '') return;
 
 		textInputRef.current.value = null;
-		textInputRef.current.focus();
 		const newTodo = createTodo(text);
 		setTodos((oldTodos) => [...oldTodos, newTodo]);
 	};
